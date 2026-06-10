@@ -1,12 +1,8 @@
-<div style="background-color:#e6f3ff; padding:15px; border-radius:10px;">
-  <h5>AI4Industrial Automation: NL2PLC Code Generation and Understanding<h5>
-</div>
-
 <div style="background:#fff3cd;
             border-left:6px solid #ffcc00;
             padding:15px;
             margin:10px 0;">
-<b>Announcement:</b> Training data released.
+<b>AI4Industrial Automation: NL2PLC Code Generation and Understanding</b>
 </div>
 
 ## Overview

@@ -1,2 +1,2 @@
-# fire2026-nl2plc
+# Fire 2026 Shared Task
 NL2PLC Code Generation and Understanding

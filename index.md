@@ -2,7 +2,7 @@
             border-left:6px solid #ffcc00;
             padding:15px;
             margin:10px 0;">
-<b>AI4Industrial Automation: NL2PLC Code Generation and Understanding</b>
+<h3>AI4Industrial Automation: NL2PLC Code Generation and Understanding</b3>
 </div>
 
 ## Overview

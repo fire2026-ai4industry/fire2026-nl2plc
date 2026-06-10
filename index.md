@@ -1,5 +1,13 @@
 # FIRE 2026 Shared Task on XYZ
 
+<div style="background-color:#e6f3ff; padding:15px; border-radius:10px;">
+  <h3>AI4Industrial Automation: NL2PLC Code Generation and Understanding</h3>
+  <ul>
+    <li>Registration Opens: TBD</li>
+    <li>Training Data Release: TBD</li>
+  </ul>
+</div>
+
 Welcome to the FIRE 2026 Shared Task on XYZ.
 
 ## Overview

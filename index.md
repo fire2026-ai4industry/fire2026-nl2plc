@@ -2,6 +2,13 @@
   <h5>AI4Industrial Automation: NL2PLC Code Generation and Understanding<h5>
 </div>
 
+<div style="background:#fff3cd;
+            border-left:6px solid #ffcc00;
+            padding:15px;
+            margin:10px 0;">
+<b>Announcement:</b> Training data released.
+</div>
+
 ## Overview
 
 Programmable Logic Controllers (PLCs) are specialized industrial computers used to automate real-time control processes in manufacturing plants, power systems, oil & gas pipelines, and other critical infrastructure. PLCs continuously monitor inputs from sensors (e.g., temperature, pressure, switches) and control outputs (e.g., motors, valves, alarms) based on programmed logic.

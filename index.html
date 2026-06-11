@@ -1,0 +1,242 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIRE 2026 Shared Task | AI4Industrial Automation</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        .banner {
+            background: #fff3cd;
+            border-left: 8px solid #ffcc00;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+
+        .banner h1 {
+            margin: 0;
+            color: #222;
+        }
+
+        .subtitle {
+            color: #555;
+            font-size: 18px;
+            margin-top: 8px;
+        }
+
+        nav {
+            background: #003366;
+            padding: 12px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            color: #003366;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            margin-bottom: 30px;
+        }
+
+        table, th, td {
+            border: 1px solid #cccccc;
+        }
+
+        th {
+            background: #f5f5f5;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #666;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="banner">
+    <h1>AI4Industrial Automation: NL2PLC Code Generation and Understanding</h1>
+    <div class="subtitle">
+        FIRE 2026 Shared Task
+    </div>
+</div>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="task.html">Task Description</a>
+    <a href="dataset.html">Dataset</a>
+    <a href="evaluation.html">Evaluation</a>
+    <a href="organizers.html">Organizers</a>
+    <a href="faq.html">FAQ</a>
+</nav>
+
+<h2>Overview</h2>
+
+<p>
+Programmable Logic Controllers (PLCs) are specialized industrial computers used
+to automate real-time control processes in manufacturing plants, power systems,
+oil & gas pipelines, and other critical infrastructure.
+</p>
+
+<p>
+PLCs continuously monitor inputs from sensors (e.g., temperature, pressure,
+switches) and control outputs (e.g., motors, valves, alarms) based on
+programmed logic.
+</p>
+
+<p>
+One of the standard programming languages for PLCs is
+<strong>Structured Text (ST)</strong>, defined under the
+<strong>IEC 61131-3</strong> standard. ST is a high-level,
+Pascal-like language that enables engineers to develop complex control logic
+using conditional statements, loops, timers, and function blocks.
+</p>
+
+<p>
+Unlike general-purpose programming, PLC programs are:
+</p>
+
+<ul>
+    <li>Time-critical and event-driven</li>
+    <li>Closely tied to physical processes and safety constraints</li>
+    <li>Required to be highly reliable and deterministic</li>
+</ul>
+
+<p>
+Even small logical errors can lead to unsafe operations, equipment damage,
+or production loss. Therefore, correctness, robustness, and interpretability
+are essential.
+</p>
+
+<p>
+This shared task focuses on developing systems that translate
+<strong>Natural Language (NL)</strong> descriptions of industrial control logic
+into syntactically correct and semantically accurate
+<strong>IEC 61131-3 Structured Text (ST)</strong> programs.
+</p>
+
+<h2>Task Objectives</h2>
+
+<ul>
+    <li>Generate Structured Text code from natural language descriptions.</li>
+    <li>Ensure IEC 61131-3 syntax compliance.</li>
+    <li>Preserve semantic correctness of industrial control logic.</li>
+    <li>Improve reliability and interpretability of generated code.</li>
+    <li>Advance Industrial AI and program synthesis research.</li>
+</ul>
+
+<h2>Important Dates</h2>
+
+<table>
+    <tr>
+        <th>Event</th>
+        <th>Date</th>
+    </tr>
+    <tr>
+        <td>Task Website Launch</td>
+        <td>TBD</td>
+    </tr>
+    <tr>
+        <td>Registration Opens</td>
+        <td>TBD</td>
+    </tr>
+    <tr>
+        <td>Training Data Release</td>
+        <td>TBD</td>
+    </tr>
+    <tr>
+        <td>Validation Data Release</td>
+        <td>TBD</td>
+    </tr>
+    <tr>
+        <td>Test Data Release</td>
+        <td>TBD</td>
+    </tr>
+    <tr>
+        <td>Submission Deadline</td>
+        <td>TBD</td>
+    </tr>
+    <tr>
+        <td>Notification of Results</td>
+        <td>TBD</td>
+    </tr>
+    <tr>
+        <td>FIRE 2026 Workshop</td>
+        <td>TBD</td>
+    </tr>
+</table>
+
+<h2>Quick Links</h2>
+
+<ul>
+    <li><a href="task.html">Task Description</a></li>
+    <li><a href="dataset.html">Dataset</a></li>
+    <li><a href="evaluation.html">Evaluation</a></li>
+    <li><a href="organizers.html">Organizers</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+</ul>
+
+<h2>Organizers</h2>
+
+<ul>
+    <li>Dr. Biswajit Chatterjee</li>
+    <li>Additional organizers to be announced</li>
+</ul>
+
+<h2>Contact</h2>
+
+<p>
+Email: To be added
+</p>
+
+<div class="footer">
+    <p>
+        FIRE 2026 Shared Task on AI4Industrial Automation:
+        NL2PLC Code Generation and Understanding
+    </p>
+</div>
+
+</body>
+</html>
+```

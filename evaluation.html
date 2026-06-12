@@ -1,0 +1,190 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation | FIRE 2026 Shared Task</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        nav {
+            background: #003366;
+            padding: 12px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+
+        h1, h2, h3 {
+            color: #003366;
+        }
+
+        .formula {
+            background: #f4f4f4;
+            border-left: 5px solid #003366;
+            padding: 15px;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+
+        table, th, td {
+            border: 1px solid #cccccc;
+        }
+
+        th {
+            background: #f5f5f5;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .footer {
+            margin-top: 40px;
+            border-top: 1px solid #ddd;
+            padding-top: 15px;
+            text-align: center;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="task.html">Task Description</a>
+    <a href="dataset.html">Dataset</a>
+    <a href="evaluation.html">Evaluation</a>
+    <a href="organizers.html">Organizers</a>
+    <a href="faq.html">FAQ</a>
+</nav>
+
+<h1>Evaluation</h1>
+
+<p>
+Participant systems will be evaluated on the official test dataset
+using automated metrics designed to measure both syntactic correctness
+and semantic fidelity of generated Structured Text programs.
+</p>
+
+<h2>Task A: Natural Language to Structured Text</h2>
+
+<p>
+Task A evaluates the ability of a system to generate IEC 61131-3
+Structured Text (ST) programs from natural language descriptions.
+</p>
+
+<h3>Metrics</h3>
+
+<table>
+<tr>
+    <th>Metric</th>
+    <th>Description</th>
+</tr>
+<tr>
+    <td>Syntax Correctness (SC)</td>
+    <td>Parser-based validation of generated ST code.</td>
+</tr>
+<tr>
+    <td>Structural Match Score (SMS)</td>
+    <td>Comparison of conditions, timers, assignments and control structures with reference code.</td>
+</tr>
+<tr>
+    <td>Token Similarity (TS)</td>
+    <td>Measured using BLEU / CodeBLEU style metrics.</td>
+</tr>
+</table>
+
+<div class="formula">
+Task A Score = 0.3 × SC + 0.5 × SMS + 0.2 × TS
+</div>
+
+<h2>Task B: PLC/ST Code Correction & Refinement</h2>
+
+<p>
+Task B evaluates the ability of a system to identify and correct
+syntactic and structural issues in Structured Text programs using
+the original natural language description as guidance.
+</p>
+
+<h3>Metrics</h3>
+
+<table>
+<tr>
+    <th>Metric</th>
+    <th>Description</th>
+</tr>
+<tr>
+    <td>Syntax Correctness (SC)</td>
+    <td>Parser-based validation of corrected ST code.</td>
+</tr>
+<tr>
+    <td>Error Reduction Score (ERS)</td>
+    <td>Normalized reduction in syntactic and logical errors.</td>
+</tr>
+<tr>
+    <td>Structural Alignment (SA)</td>
+    <td>Alignment between corrected code and reference implementation.</td>
+</tr>
+</table>
+
+<div class="formula">
+Task B Score = 0.3 × SC + 0.3 × ERS + 0.4 × SA
+</div>
+
+<h2>Final Ranking</h2>
+
+<p>
+The final ranking of participating teams will be determined by combining
+scores from both subtasks.
+</p>
+
+<div class="formula">
+Final Score = 0.7 × Task A Score + 0.3 × Task B Score
+</div>
+
+<h2>Tie-Breaking Policy</h2>
+
+<p>
+In the event of a tie, the team with the higher Task A score will be
+ranked higher. Additional tie-breaking criteria may be announced if required.
+</p>
+
+<h2>Evaluation Toolkit</h2>
+
+<p>
+The official evaluation toolkit and scoring scripts will be released
+before the test phase.
+</p>
+
+<div class="footer">
+FIRE 2026 Shared Task on AI4Industrial Automation
+</div>
+
+</body>
+</html>
+```

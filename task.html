@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Description | FIRE 2026 Shared Task</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        nav {
+            background: #003366;
+            padding: 12px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+
+        h1, h2, h3 {
+            color: #003366;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .example {
+            background: #f4f4f4;
+            border-left: 5px solid #003366;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        pre {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 15px;
+            overflow-x: auto;
+            border-radius: 5px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            border-top: 1px solid #ddd;
+            padding-top: 15px;
+            text-align: center;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="task.html">Task Description</a>
+    <a href="dataset.html">Dataset</a>
+    <a href="evaluation.html">Evaluation</a>
+    <a href="organizers.html">Organizers</a>
+    <a href="faq.html">FAQ</a>
+</nav>
+
+<h1>Task Description</h1>
+
+<div class="section">
+<h2>Motivation</h2>
+
+<p>
+Programmable Logic Controllers (PLCs) are widely used in industrial automation
+systems such as manufacturing, energy, transportation, and process industries.
+PLC programming requires specialized expertise and knowledge of industrial
+control systems.
+</p>
+
+<p>
+Domain experts and plant operators often describe control logic in natural
+language, creating a significant gap between system requirements and actual
+implementation. Errors in PLC programs may lead to safety hazards, production
+losses, and equipment damage.
+</p>
+
+<p>
+This shared task aims to bridge this gap by encouraging the development of
+AI-based systems capable of generating and refining IEC 61131-3 Structured Text
+(ST) programs from natural language descriptions.
+</p>
+</div>
+
+<div class="section">
+<h2>Use Case Example</h2>
+
+<div class="example">
+
+<b>Natural Language Description</b>
+
+<p>
+If temperature exceeds 80°C and pressure is above threshold,
+stop the motor and trigger alarm after 5 seconds delay.
+</p>
+
+<b>Equivalent Structured Text Program</b>
+
+<pre>
+IF (Temperature > 80) AND
+   (Pressure > Pressure_Threshold) THEN
+
+   Motor := FALSE;
+
+   AlarmTimer(
+       IN := TRUE,
+       PT := T#5s
+   );
+
+ELSE
+
+   AlarmTimer(IN := FALSE);
+
+END_IF;
+
+IF AlarmTimer.Q THEN
+   Alarm := TRUE;
+END_IF;
+</pre>
+
+</div>
+</div>
+
+<div class="section">
+<h2>Shared Task Structure</h2>
+
+<p>
+The shared task consists of two complementary subtasks.
+</p>
+</div>
+
+<div class="section">
+<h2>Task A: Natural Language to Structured Text</h2>
+
+<p>
+Generate IEC 61131-3 compliant Structured Text programs from natural language
+descriptions of industrial control logic.
+</p>
+
+<h3>Input</h3>
+
+<ul>
+<li>Natural Language Description of industrial control logic</li>
+</ul>
+
+<h3>Output</h3>
+
+<ul>
+<li>IEC 61131-3 Structured Text (ST) Program</li>
+</ul>
+
+<h3>Objective</h3>
+
+<ul>
+<li>Generate syntactically correct ST code</li>
+<li>Preserve intended control logic semantics</li>
+<li>Produce executable industrial automation programs</li>
+</ul>
+
+</div>
+
+<div class="section">
+<h2>Task B: PLC/ST Code Correction & Refinement</h2>
+
+<p>
+Detect and correct syntactical errors in Structured Text code using the
+corresponding Natural Language Description as the reference standard.
+</p>
+
+<h3>Input</h3>
+
+<ul>
+<li>Generated Structured Text code</li>
+<li>Original Natural Language Description</li>
+</ul>
+
+<h3>Output</h3>
+
+<ul>
+<li>Corrected IEC 61131-3 compliant Structured Text program</li>
+</ul>
+
+<h3>Objective</h3>
+
+<ul>
+<li>Identify syntax errors</li>
+<li>Correct malformed ST programs</li>
+<li>Improve semantic alignment with requirements</li>
+</ul>
+
+</div>
+
+<div class="section">
+<h2>Allowed Resources</h2>
+
+<ul>
+<li>Open-source language models</li>
+<li>Publicly available datasets</li>
+<li>Open-source software libraries</li>
+<li>Custom training and fine-tuning approaches</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>LLM Usage Policy</h2>
+
+<p>
+Only open-source models up to 8 GB in size are permitted for participation.
+</p>
+</div>
+
+<div class="footer">
+FIRE 2026 Shared Task on AI4Industrial Automation
+</div>
+
+</body>
+</html>

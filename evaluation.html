@@ -100,22 +100,23 @@ Structured Text (ST) programs from natural language descriptions.
 <h3>Metrics</h3>
 
 <table>
-<tr>
-    <th>Metric</th>
-    <th>Description</th>
-</tr>
-<tr>
-    <td>Syntax Correctness (SC)</td>
-    <td>Parser-based validation of generated ST code.</td>
-</tr>
-<tr>
-    <td>Structural Match Score (SMS)</td>
-    <td>Comparison of conditions, timers, assignments and control structures with reference code.</td>
-</tr>
-<tr>
-    <td>Token Similarity (TS)</td>
-    <td>Measured using BLEU / CodeBLEU style metrics.</td>
-</tr>
+    <tr>
+        <th>Metric</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>Cosine Similarity (CS)</td>
+        <td>Semantic similarity between generated and reference code representations using embedding-based cosine similarity.</td>
+    </tr>
+    <tr>
+        <td>Structural Match Score (SMS)</td>
+        <td>Measures the similarity of conditions, assignments, timers, loops, and control-flow structures between the generated and reference ST code.</td>
+    </tr>
+
+    <tr>
+        <td>Program Dependence Graph Similarity (PDG)</td>
+        <td>Evaluates the similarity of data and control dependencies between generated and reference programs using Program Dependence Graphs.</td>
+    </tr>
 </table>
 
 <h2>Task B: Natural Language to Rust Program</h2>
@@ -132,17 +133,18 @@ Task B evaluates the ability of a system to generate Rust programs from natural 
     <th>Description</th>
 </tr>
 <tr>
-    <td>Syntax Correctness (SC)</td>
-    <td>Parser-based validation of corrected ST code.</td>
-</tr>
-<tr>
-    <td>Error Reduction Score (ERS)</td>
-    <td>Normalized reduction in syntactic and logical errors.</td>
-</tr>
-<tr>
-    <td>Structural Alignment (SA)</td>
-    <td>Alignment between corrected code and reference implementation.</td>
-</tr>
+        <td>Cosine Similarity (CS)</td>
+        <td>Semantic similarity between generated and reference code representations using embedding-based cosine similarity.</td>
+    </tr>
+    <tr>
+        <td>Structural Match Score (SMS)</td>
+        <td>Measures the similarity of conditions, assignments, timers, loops, and control-flow structures between the generated and reference Rust code.</td>
+    </tr>
+
+    <tr>
+        <td>Program Dependence Graph Similarity (PDG)</td>
+        <td>Evaluates the similarity of data and control dependencies between generated and reference programs using Program Dependence Graphs.</td>
+    </tr>
 </table>
 
 <h2>Final Ranking</h2>

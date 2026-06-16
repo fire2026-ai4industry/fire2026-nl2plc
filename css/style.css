@@ -173,6 +173,33 @@ pre {
     border-radius: 5px;
 }
 
+.registration-marquee {
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 1.2em;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.registration-marquee::after {
+    content: "📢 Registration is Open";
+    position: absolute;
+    left: -100%;
+    animation: moveRight 12s linear infinite;
+}
+
+@keyframes moveRight {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 100%;
+    }
+}
+
 /* =========================================
    Buttons
    ========================================= */

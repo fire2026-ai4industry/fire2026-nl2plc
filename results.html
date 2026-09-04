@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results | FIRE 2026 Shared Task</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+            line-height: 1.7;
+            color: #333;
+        }
+
+        nav {
+            background: #003366;
+            padding: 12px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+
+        h1, h2, h3 {
+            color: #003366;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .formula {
+            background: #f4f4f4;
+            border-left: 5px solid #003366;
+            padding: 15px;
+            margin: 15px 0;
+            font-weight: bold;
+            font-size: 1.05em;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            margin-bottom: 30px;
+        }
+
+        table, th, td {
+            border: 1px solid #cccccc;
+        }
+
+        th {
+            background: #f5f5f5;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th:first-child,
+        td:first-child {
+            text-align: center;
+            width: 80px;
+        }
+
+        th:last-child,
+        td:last-child {
+            text-align: center;
+            width: 150px;
+        }
+
+
+        .result-value {
+            color: red;
+            font-weight: bold;
+        }
+
+        .note {
+            background: #f4f4f4;
+            border-left: 5px solid #003366;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .footer {
+            margin-top: 40px;
+            border-top: 1px solid #ddd;
+            padding-top: 15px;
+            text-align: center;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="task.html">Task Description</a>
+    <a href="dataset.html">Dataset</a>
+    <a href="evaluation.html">Evaluation</a>
+    <a href="results.html">Results</a>
+    <a href="organizers.html">Organizers</a>
+    <a href="faq.html">FAQ</a>
+    <a href="registration.html">Registration</a>
+</nav>
+
+<h1>Results</h1>
+
+<p>
+The final results of the FIRE 2026 Shared Task on AI4Industrial Automation
+are presented separately for the two subtasks. The rankings are based on
+the final evaluation score obtained on the official test data.
+</p>
+
+<div class="section">
+    <h2>Evaluation Formula</h2>
+
+    <p>
+        The final score is calculated by comparing the generated program
+        with the corresponding Gold Standard Code.
+    </p>
+
+    <div class="formula">
+        Final Score =
+        0.25 × Cosine Similarity +
+        0.25 × Structural Match Score +
+        0.50 × PDG Score
+    </div>
+
+    <table>
+        <tr>
+            <th>Metric</th>
+            <th>Weight</th>
+        </tr>
+        <tr>
+            <td>Cosine Similarity (CS)</td>
+            <td>25%</td>
+        </tr>
+        <tr>
+            <td>Structural Match Score (SMS)</td>
+            <td>25%</td>
+        </tr>
+        <tr>
+            <td>Program Dependence Graph Similarity (PDG)</td>
+            <td>50%</td>
+        </tr>
+    </table>
+
+    <div class="note">
+        <strong>Note:</strong> The final ranking is determined separately
+        for each subtask. A separate leaderboard is provided for
+        Task A (Natural Language to Structured Text) and
+        Task B (Natural Language to Rust Program).
+    </div>
+</div>
+
+<div class="section">
+    <h2>Task A: Natural Language to Structured Text (ST)</h2>
+
+    <p>
+        The following leaderboard presents the results for systems that
+        generate IEC 61131-3 Structured Text programs from natural language
+        descriptions.
+    </p>
+
+    <table>
+        <tr>
+            <th>Rank</th>
+            <th>Team Name</th>
+            <th>Final Score</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>8 Bit Thugs</td>
+            <td class="result-value">81.78</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>team meooo</td>
+            <td class="result-value">79.31</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Treygram</td>
+            <td class="result-value">78.83</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Master Mind</td>
+            <td class="result-value">76.63</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>CSNLP</td>
+            <td class="result-value">75.11</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>AutoLogic AI</td>
+            <td class="result-value">73.62</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>TokenX</td>
+            <td class="result-value">73.50</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>fih</td>
+            <td class="result-value">63.21</td>
+        </tr>
+    </table>
+</div>
+
+<div class="section">
+    <h2>Task B: Natural Language to Rust Program</h2>
+
+    <p>
+        The following leaderboard presents the results for systems that
+        generate Rust programs from natural language descriptions of
+        industrial control logic.
+    </p>
+
+    <table>
+        <tr>
+            <th>Rank</th>
+            <th>Team Name</th>
+            <th>Final Score</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Master Mind</td>
+            <td class="result-value">61.55</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>CSNLP</td>
+            <td class="result-value">60.43</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>AutoLogic AI</td>
+            <td class="result-value">59.29</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Treygram</td>
+            <td class="result-value">59.22</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>TokenX</td>
+            <td class="result-value">56.67</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>fih</td>
+            <td class="result-value">53.20</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>team meooo</td>
+            <td class="result-value">44.20</td>
+        </tr>
+    </table>
+</div>
+
+<div class="footer">
+    FIRE 2026 Shared Task on AI4Industrial Automation
+</div>
+
+</body>
+</html>
